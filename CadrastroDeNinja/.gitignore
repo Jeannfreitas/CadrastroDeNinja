@@ -1,0 +1,40 @@
+# Arquivos gerados pelo Maven
+!.mvn/wrapper/maven-wrapper.jar
+**/target/
+
+# Arquivos de configuração das IDEs
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+.nb-gradle/
+build/
+**/build/
+
+### VS Code ###
+.vscode/
+
+# Arquivos de log
+*.log
+
+# Arquivos de backup e temporários
+*~
+*.bak
+*.swp
+
+# Arquivos específicos de OS
+.DS_Store
+Thumbs.db
