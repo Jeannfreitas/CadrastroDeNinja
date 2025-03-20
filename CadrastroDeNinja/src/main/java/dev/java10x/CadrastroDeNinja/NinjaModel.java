@@ -1,14 +1,27 @@
 package dev.java10x.CadrastroDeNinja;
 
+import jakarta.persistence.*;
+
+
+@Entity
+@Table(name = "tb_cadastro")
 public class NinjaModel {
-    String nome;
-    String email;
-    int idade;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+    private String nome;
+    private String email;
+    private int idade;
 
     public NinjaModel(String nome, String email, int idade) {
         this.nome = nome;
         this.email = email;
         this.idade = idade;
+    }
+
+    public NinjaModel() {
+
     }
 
     public String getNome() {
@@ -34,4 +47,5 @@ public class NinjaModel {
     public void setIdade(int idade) {
         this.idade = idade;
     }
+
 }
